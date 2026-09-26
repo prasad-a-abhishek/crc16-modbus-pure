@@ -294,4 +294,4 @@ The following are *not* findings, but are observed opportunities for a future ha
 
 ---
 
-**VERDICT: SHIP**
+VERDICT: SHIP
