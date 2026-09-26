@@ -1,0 +1,78 @@
+# Seed corpus — fuzz/crc_main
+
+Surface: `crc_main`
+Seed count: 71
+
+## Entries
+
+- `b'empty.b'`
+- `b'ac3-reveng.b'`
+- `b'ac1-zero.b'`
+- `b'ac1-one.b'`
+- `b'ac1-ff.b'`
+- `b'range-0-9.b'`
+- `b'ac7-256zeros.b'`
+- `len-00000-zeros.b`
+- `len-00000-ff.b`
+- `len-00001-zeros.b`
+- `len-00001-ff.b`
+- `len-00002-zeros.b`
+- `len-00002-ff.b`
+- `len-00008-zeros.b`
+- `len-00008-ff.b`
+- `len-00009-zeros.b`
+- `len-00009-ff.b`
+- `len-00015-zeros.b`
+- `len-00015-ff.b`
+- `len-00016-zeros.b`
+- `len-00016-ff.b`
+- `len-00031-zeros.b`
+- `len-00031-ff.b`
+- `len-00032-zeros.b`
+- `len-00032-ff.b`
+- `len-00255-zeros.b`
+- `len-00255-ff.b`
+- `len-00256-zeros.b`
+- `len-00256-ff.b`
+- `len-01023-zeros.b`
+- `len-01023-ff.b`
+- `len-01024-zeros.b`
+- `len-01024-ff.b`
+- `len-04095-zeros.b`
+- `len-04095-ff.b`
+- `len-04096-zeros.b`
+- `len-04096-ff.b`
+- `len-08191-zeros.b`
+- `len-08191-ff.b`
+- `len-08192-zeros.b`
+- `len-08192-ff.b`
+- `len-65535-zeros.b`
+- `len-65535-ff.b`
+- `alt-aa55-len16.b`
+- `alt-55aa-len16.b`
+- `alt-aa55-len64.b`
+- `alt-55aa-len64.b`
+- `alt-aa55-len256.b`
+- `alt-55aa-len256.b`
+- `alt-aa55-len1024.b`
+- `alt-55aa-len1024.b`
+- `pat-00010203-x4.b`
+- `pat-00010203-x16.b`
+- `pat-00010203-x64.b`
+- `pat-00010203-x256.b`
+- `pat-deadbeef-x4.b`
+- `pat-deadbeef-x16.b`
+- `pat-deadbeef-x64.b`
+- `pat-deadbeef-x256.b`
+- `pat-12345678-x4.b`
+- `pat-12345678-x16.b`
+- `pat-12345678-x64.b`
+- `pat-12345678-x256.b`
+- `ascii-b'hello'.b`
+- `ascii-b'Hello, W'.b`
+- `ascii-b'The quic'.b`
+- `ascii-b'crc16-mo'.b`
+- `ascii-b'a'.b`
+- `ascii-b'ab'.b`
+- `ascii-b'abc'.b`
+- `ascii-b'abcd'.b`

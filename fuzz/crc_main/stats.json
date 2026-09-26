@@ -1,0 +1,27 @@
+{
+  "surface": "crc_main",
+  "harness": "harness_crc_main.py",
+  "args": [
+    "--iters",
+    "100000",
+    "--mode",
+    "all",
+    "--seed",
+    "42"
+  ],
+  "rationale": "100K random + stress + subclass \u2014 primary algorithmic surface",
+  "exit_status": 0,
+  "duration_seconds": 227.834,
+  "iters_total": 100000,
+  "iters_per_sec": 438.9,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 71,
+  "stdout_tail": [
+    "[crc_main] iters=100000 crashes=0 time=227.812s"
+  ]
+}

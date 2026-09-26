@@ -1,0 +1,211 @@
+{
+  "total_iters": 410506,
+  "total_surfaces": 8,
+  "total_crashes": 0,
+  "total_hangs": 0,
+  "total_oom": 0,
+  "total_oracle_mismatches": 0,
+  "duration_seconds_total": 574.3,
+  "per_surface": {
+    "crc_main": {
+      "surface": "crc_main",
+      "harness": "harness_crc_main.py",
+      "args": [
+        "--iters",
+        "100000",
+        "--mode",
+        "all",
+        "--seed",
+        "42"
+      ],
+      "rationale": "100K random + stress + subclass \u2014 primary algorithmic surface",
+      "exit_status": 0,
+      "duration_seconds": 227.834,
+      "iters_total": 100000,
+      "iters_per_sec": 438.9,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 71,
+      "stdout_tail": [
+        "[crc_main] iters=100000 crashes=0 time=227.812s"
+      ]
+    },
+    "type_errors": {
+      "surface": "type_errors",
+      "harness": "harness_type_errors.py",
+      "args": [
+        "--iters",
+        "100000",
+        "--seed",
+        "42"
+      ],
+      "rationale": "100K random type-attack \u2014 covers AC12 + CWE-20 type-error path",
+      "exit_status": 0,
+      "duration_seconds": 0.137,
+      "iters_total": 100000,
+      "iters_per_sec": 729927.0,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 11,
+      "stdout_tail": [
+        "[type_errors] iters=100000 crashes=0 time=0.108s"
+      ]
+    },
+    "large_input": {
+      "surface": "large_input",
+      "harness": "harness_large_input.py",
+      "args": [
+        "--iters",
+        "3",
+        "--max-mb",
+        "1"
+      ],
+      "rationale": "sizes 1..1MB \u00d7 3 patterns \u00d7 3 reps \u2014 CWE-400 exhaustion within time budget",
+      "exit_status": 0,
+      "duration_seconds": 5.527,
+      "iters_total": null,
+      "iters_per_sec": null,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 3,
+      "stdout_tail": [
+        "[large_input] sizes=[1, 1000, 100000, 1000000] iters/size=3 crashes=0 time=5.508s"
+      ]
+    },
+    "cli_data": {
+      "surface": "cli_data",
+      "harness": "harness_cli_data.py",
+      "args": [
+        "--iters",
+        "10000",
+        "--seed",
+        "42"
+      ],
+      "rationale": "10K random hex strings via crc16-modbus-pure-compute \u2014 surface #4",
+      "exit_status": 0,
+      "duration_seconds": 155.966,
+      "iters_total": 10000,
+      "iters_per_sec": 64.1,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 24,
+      "stdout_tail": [
+        "[cli_data] iters=10000 crashes=0 time=155.945s"
+      ]
+    },
+    "cli_self_test": {
+      "surface": "cli_self_test",
+      "harness": "harness_cli_self_test.py",
+      "args": [
+        "--iters",
+        "500"
+      ],
+      "rationale": "500 self-test invocations (determinism) + bad-argv neg-path",
+      "exit_status": 0,
+      "duration_seconds": 7.857,
+      "iters_total": 500,
+      "iters_per_sec": 63.6,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 5,
+      "stdout_tail": [
+        "[cli_self_test] iters=500 crashes=0 time=7.838s"
+      ]
+    },
+    "crc_oracle": {
+      "surface": "crc_oracle",
+      "harness": "harness_crc_oracle.py",
+      "args": [
+        "--iters",
+        "100000",
+        "--seed",
+        "42"
+      ],
+      "rationale": "100K random inputs cross-checked against crcmod reference",
+      "exit_status": 0,
+      "duration_seconds": 23.594,
+      "iters_total": 100000,
+      "iters_per_sec": 4238.4,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 28,
+      "stdout_tail": [
+        "[crc_oracle] iters=100000 crashes=0 oracle_mismatches=0 time=23.574s"
+      ]
+    },
+    "module_import": {
+      "surface": "module_import",
+      "harness": "harness_module_import.py",
+      "args": [
+        "--iters",
+        "6"
+      ],
+      "rationale": "fresh subprocess imports under 6 PYTHONHASHSEED values",
+      "exit_status": 0,
+      "duration_seconds": 0.099,
+      "iters_total": 6,
+      "iters_per_sec": 60.6,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 6,
+      "stdout_tail": [
+        "[module_import] iters=6 crashes=0 time=0.080s"
+      ]
+    },
+    "cross_cycle": {
+      "surface": "cross_cycle",
+      "harness": "harness_cross_cycle.py",
+      "args": [
+        "--iters",
+        "100000",
+        "--det-iters",
+        "100000",
+        "--seed",
+        "42"
+      ],
+      "rationale": "100K random + 100K det iters on b'123456789' against bitwise reference",
+      "exit_status": 0,
+      "duration_seconds": 153.286,
+      "iters_total": 100000,
+      "iters_per_sec": 652.4,
+      "crashes": 0,
+      "hangs": 0,
+      "oom": 0,
+      "oracle_mismatches": 0,
+      "first_crash_at_iter": null,
+      "exit_nonzero": false,
+      "seed_corpus_size": 15,
+      "stdout_tail": [
+        "[cross_cycle] iters=100000 det_iters=100000 crashes=0 oracle_mismatches=0 time=153.265s"
+      ]
+    }
+  }
+}

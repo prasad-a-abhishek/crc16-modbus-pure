@@ -1,0 +1,25 @@
+{
+  "surface": "type_errors",
+  "harness": "harness_type_errors.py",
+  "args": [
+    "--iters",
+    "100000",
+    "--seed",
+    "42"
+  ],
+  "rationale": "100K random type-attack \u2014 covers AC12 + CWE-20 type-error path",
+  "exit_status": 0,
+  "duration_seconds": 0.137,
+  "iters_total": 100000,
+  "iters_per_sec": 729927.0,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 11,
+  "stdout_tail": [
+    "[type_errors] iters=100000 crashes=0 time=0.108s"
+  ]
+}

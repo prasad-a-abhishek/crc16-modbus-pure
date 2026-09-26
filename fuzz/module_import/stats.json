@@ -1,0 +1,23 @@
+{
+  "surface": "module_import",
+  "harness": "harness_module_import.py",
+  "args": [
+    "--iters",
+    "6"
+  ],
+  "rationale": "fresh subprocess imports under 6 PYTHONHASHSEED values",
+  "exit_status": 0,
+  "duration_seconds": 0.099,
+  "iters_total": 6,
+  "iters_per_sec": 60.6,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 6,
+  "stdout_tail": [
+    "[module_import] iters=6 crashes=0 time=0.080s"
+  ]
+}

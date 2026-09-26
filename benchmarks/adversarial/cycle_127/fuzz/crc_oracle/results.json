@@ -1,10 +1,10 @@
 {
   "harness": "harness_crc_oracle.py",
   "skipped": false,
-  "iters": 100,
+  "iters": 100000,
   "seed": 42,
   "crashes": 0,
   "oracle_mismatches": 0,
   "details": [],
-  "elapsed_s": 0.023
+  "elapsed_s": 23.5739
 }

@@ -1,0 +1,27 @@
+{
+  "surface": "cross_cycle",
+  "harness": "harness_cross_cycle.py",
+  "args": [
+    "--iters",
+    "100000",
+    "--det-iters",
+    "100000",
+    "--seed",
+    "42"
+  ],
+  "rationale": "100K random + 100K det iters on b'123456789' against bitwise reference",
+  "exit_status": 0,
+  "duration_seconds": 153.286,
+  "iters_total": 100000,
+  "iters_per_sec": 652.4,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 15,
+  "stdout_tail": [
+    "[cross_cycle] iters=100000 det_iters=100000 crashes=0 oracle_mismatches=0 time=153.265s"
+  ]
+}

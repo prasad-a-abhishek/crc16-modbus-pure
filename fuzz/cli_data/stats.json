@@ -1,0 +1,25 @@
+{
+  "surface": "cli_data",
+  "harness": "harness_cli_data.py",
+  "args": [
+    "--iters",
+    "10000",
+    "--seed",
+    "42"
+  ],
+  "rationale": "10K random hex strings via crc16-modbus-pure-compute \u2014 surface #4",
+  "exit_status": 0,
+  "duration_seconds": 155.966,
+  "iters_total": 10000,
+  "iters_per_sec": 64.1,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 24,
+  "stdout_tail": [
+    "[cli_data] iters=10000 crashes=0 time=155.945s"
+  ]
+}

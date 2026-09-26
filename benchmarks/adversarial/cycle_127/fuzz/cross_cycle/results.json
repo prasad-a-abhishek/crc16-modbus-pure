@@ -1,10 +1,10 @@
 {
   "harness": "harness_cross_cycle.py",
-  "iters": 100,
-  "det_iters": 1000,
+  "iters": 100000,
+  "det_iters": 100000,
   "seed": 42,
   "crashes": 0,
   "oracle_mismatches": 0,
   "details": [],
-  "elapsed_s": 0.1723
+  "elapsed_s": 153.2649
 }

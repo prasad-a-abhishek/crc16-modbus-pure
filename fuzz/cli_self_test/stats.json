@@ -1,0 +1,23 @@
+{
+  "surface": "cli_self_test",
+  "harness": "harness_cli_self_test.py",
+  "args": [
+    "--iters",
+    "500"
+  ],
+  "rationale": "500 self-test invocations (determinism) + bad-argv neg-path",
+  "exit_status": 0,
+  "duration_seconds": 7.857,
+  "iters_total": 500,
+  "iters_per_sec": 63.6,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 5,
+  "stdout_tail": [
+    "[cli_self_test] iters=500 crashes=0 time=7.838s"
+  ]
+}

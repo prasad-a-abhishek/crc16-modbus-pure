@@ -1,0 +1,25 @@
+{
+  "surface": "large_input",
+  "harness": "harness_large_input.py",
+  "args": [
+    "--iters",
+    "3",
+    "--max-mb",
+    "1"
+  ],
+  "rationale": "sizes 1..1MB \u00d7 3 patterns \u00d7 3 reps \u2014 CWE-400 exhaustion within time budget",
+  "exit_status": 0,
+  "duration_seconds": 5.527,
+  "iters_total": null,
+  "iters_per_sec": null,
+  "crashes": 0,
+  "hangs": 0,
+  "oom": 0,
+  "oracle_mismatches": 0,
+  "first_crash_at_iter": null,
+  "exit_nonzero": false,
+  "seed_corpus_size": 3,
+  "stdout_tail": [
+    "[large_input] sizes=[1, 1000, 100000, 1000000] iters/size=3 crashes=0 time=5.508s"
+  ]
+}
