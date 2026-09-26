@@ -1,0 +1,9 @@
+{
+  "harness": "harness_crc_main.py",
+  "mode": "all",
+  "iters": 100,
+  "seed": 42,
+  "crashes": 0,
+  "details": [],
+  "elapsed_s": 2.0356
+}

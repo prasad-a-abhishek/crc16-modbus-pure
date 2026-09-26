@@ -1,0 +1,8 @@
+{
+  "harness": "harness_type_errors.py",
+  "iters": 100,
+  "seed": 42,
+  "crashes": 0,
+  "details": [],
+  "elapsed_s": 0.0002
+}

@@ -1,0 +1,7 @@
+{
+  "harness": "harness_cli_self_test.py",
+  "iters": 100,
+  "crashes": 0,
+  "details": [],
+  "elapsed_s": 1.6555
+}

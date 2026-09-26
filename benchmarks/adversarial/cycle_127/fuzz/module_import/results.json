@@ -1,0 +1,15 @@
+{
+  "harness": "harness_module_import.py",
+  "iters": 6,
+  "seeds": [
+    0,
+    1,
+    42,
+    1337,
+    9999,
+    2147483647
+  ],
+  "crashes": 0,
+  "details": [],
+  "elapsed_s": 0.0803
+}
