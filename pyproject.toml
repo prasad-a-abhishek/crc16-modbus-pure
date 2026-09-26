@@ -3,14 +3,22 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "crc16-modbus"
+name = "crc16-modbus-pure"
 version = "0.1.0"
 description = "Pure-Python CRC-16/Modbus reference implementation, zero runtime deps"
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+test = ["pytest>=7", "crcmod>=1.7"]
+
+[project.scripts]
+crc16-modbus-pure-compute = "crc16_modbus_pure.cli:main_compute"
+crc16-modbus-pure-self-test = "crc16_modbus_pure.cli:main_self_test"
+
 [project.urls]
 Homepage = "https://github.com/prasad-a-abhishek/crc16-modbus-pure"
+Issues = "https://github.com/prasad-a-abhishek/crc16-modbus-pure/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
