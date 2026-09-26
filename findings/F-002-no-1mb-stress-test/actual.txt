@@ -1,0 +1,3 @@
+Current: no automated test asserts the bound. The empirical evidence lives only in
+fuzz/large_input/stats.json. A regression to O(n^2) would not be caught by the suite
+until manual reproduction.

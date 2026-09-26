@@ -1,0 +1,2 @@
+No stack trace — coverage gap, not a runtime failure. The card-03 large_input
+fuzzer ran 12 invocations at sizes up to 1 MB and observed zero OOM, zero hangs.

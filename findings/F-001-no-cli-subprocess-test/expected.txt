@@ -1,0 +1,2 @@
+Expected behavior after fix: 4 subprocess-based tests added to tests/test_cli_subprocess.py,
+all 4 assert on subprocess exit_code + stdout/stderr content. They run in CI.

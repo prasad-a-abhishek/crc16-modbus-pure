@@ -1,0 +1,4 @@
+Expected after fix: a subprocess-based test asserts `python -m crc16_modbus_pure`
+exits 0 and contains "passed" in stdout (the self-test summary line). Empirically
+verified by fuzz/module_import (6 fresh subprocesses, all exit 0) and fuzz/cli_self_test
+(500 iters, all exit 0), but not asserted by an in-suite test.

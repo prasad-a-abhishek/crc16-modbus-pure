@@ -1,0 +1,5 @@
+Expected: a single locked-value test added to TestInitXoroutMatrix cross-checks one
+(init, xorout) pair against crcmod. The property holds empirically per fuzz/crc_oracle
+(100 000 iters, zero mismatches) but is not asserted in tests/. The Modbus default pair
+(init=0xFFFF, xorout=0x0000) must be used because that is the only (init, xorout) pair
+where crcmod and crc16-modbus-pure agree byte-exactly by convention.

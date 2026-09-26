@@ -1,0 +1,5 @@
+Current: TestInitXoroutMatrix asserts only isinstance(int) and 0 <= r <= 0xFFFF.
+A constant-return bug would pass. Empirically locked by fuzz/crc_oracle (100 000
+oracle comparisons) but not by an in-suite unit test. A locked unit test on the
+Modbus default pair (init=0xFFFF, xorout=0x0000) would also catch a regression
+in the parameter-convention logic.

@@ -1,0 +1,3 @@
+Current behavior: no subprocess-based CLI test exists. tests/test_crc16_modbus_pure.py::TestCliImports
+covers cli.main_compute and cli.main_self_test as in-process function calls only.
+No test would catch a [project.scripts] rename in pyproject.toml.

@@ -1,0 +1,2 @@
+No stack trace — this is a test-coverage gap, not a runtime failure.
+The card-03 fuzzers did not trigger any crash/hang/oracle-mismatch on this surface.

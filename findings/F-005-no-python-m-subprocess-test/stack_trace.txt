@@ -1,0 +1,2 @@
+No stack trace — coverage gap, not a runtime failure. fuzz/module_import (6 iters)
+and fuzz/cli_self_test (500 iters) both observed exit 0 with no anomalies.

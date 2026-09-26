@@ -1,0 +1,2 @@
+No stack trace — coverage gap, not a runtime failure. All 8 fuzz surfaces
+returned zero oracle mismatches on 410 506 total iterations.

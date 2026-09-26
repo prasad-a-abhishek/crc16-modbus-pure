@@ -1,0 +1,3 @@
+Current: TestCliImports.test_main_module_wired only imports __main__ and verifies
+main_self_test is bound. No test spawns `python -m crc16_modbus_pure` to assert
+stdout + exit_code end-to-end.

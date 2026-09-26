@@ -1,0 +1,2 @@
+Current: no automated concurrent test. The cross_cycle fuzzer runs 200 000 iters
+single-threaded; a real multi-thread race is not exercised by the suite.

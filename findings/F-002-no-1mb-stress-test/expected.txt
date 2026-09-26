@@ -1,0 +1,3 @@
+Expected: 1 MB input completes in <5s on CPython 3.11, returns a 16-bit CRC. Empirically
+the card-03 fuzz harness confirmed this on 3 reps at 1 MB (5.527s total / 12 iters),
+but the value is not locked in any automated test yet.

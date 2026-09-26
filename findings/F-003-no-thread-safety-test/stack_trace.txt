@@ -1,0 +1,2 @@
+No stack trace — coverage gap, not a runtime failure. No thread-safety violation was
+observed by any fuzzer (the cross_cycle harness runs single-process).

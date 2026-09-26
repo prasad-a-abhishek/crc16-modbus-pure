@@ -1,0 +1,3 @@
+Expected after fix: a ThreadPoolExecutor-based test asserts all 100 concurrent invocations
+on the same 9 KB input return the identical CRC. Property holds empirically today; no test
+asserts it.
